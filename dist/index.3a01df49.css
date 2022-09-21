@@ -1,0 +1,133 @@
+*, :before, :after {
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: #feb9c9;
+  margin: 0;
+  padding: 0;
+  font-family: Halcom, serif;
+}
+
+:root {
+  --bg-color: #18374c;
+  --font-color: #feb9c9;
+  --additional-color: #b31b27;
+}
+
+.h1 {
+  font-family: halcom, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+  .message-media-query {
+    display: none;
+  }
+
+  .header {
+    width: 100vw;
+    height: auto;
+    grid-template-rows: 1fr .1fr auto .1fr;
+    grid-template-columns: 1fr 8fr 1fr;
+    display: grid;
+    overflow: hidden;
+  }
+
+  .header__image {
+    width: 100vw;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .header__text {
+    height: auto;
+    color: #feb9c9;
+    text-align: center;
+    grid-area: 3 / 2 / 4 / 3;
+    line-height: 115%;
+  }
+
+  .entry-form__form {
+    text-align: center;
+    grid-template-rows: 1fr .1fr 1fr .1fr 1fr .1fr 1fr .1fr 1fr .1fr 1fr .1fr 1fr .1fr;
+    grid-template-columns: 1fr 8fr 1fr;
+    display: grid;
+    overflow: hidden;
+  }
+
+  .entry-form__image {
+    width: 100vw;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .entry-form__headline {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .entry-form__first-name {
+    border: none;
+    border-bottom: dashed var(--font-color) 1px;
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+  .entry-form__last-name {
+    border: none;
+    border-bottom: dashed var(--font-color) 1px;
+    grid-area: 7 / 2 / 8 / 3;
+  }
+
+  .entry-form__e-mail {
+    border: none;
+    border-bottom: dashed var(--font-color) 1px;
+    grid-area: 9 / 2 / 10 / 3;
+  }
+
+  .entry-form__date-of-birth {
+    grid-area: 11 / 2 / 15 / 3;
+    display: inline-block;
+  }
+
+  .entry-form__date-of-birth__DD__label {
+    display: inline-block;
+  }
+
+  .entry-form__gender-toggle, .entry-form__gender-toggle__female, .entry-form__gender-toggle__male {
+    grid-area: 15 / 2 / 16 / 3;
+  }
+
+  .entry-form__checkbox__terms-conditions, .entry-form__checkbox__terms-conditions__label {
+    grid-area: 17 / 2 / 18 / 3;
+  }
+
+  .entry-form__checkbox__mailing-list {
+    grid-area: 19 / 2 / 20 / 3;
+  }
+
+  .entry-form__checkbox__mailing-list__label {
+    grid-area: 21 / 2 / 22 / 3;
+  }
+
+  .entry-form__submit {
+    grid-area: 23 / 2 / 24 / 3;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .header, .entry-form {
+    display: none;
+  }
+
+  .message-media-query {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
